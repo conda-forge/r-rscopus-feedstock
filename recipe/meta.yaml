@@ -1,6 +1,5 @@
 {% set version = '0.6.6' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-rscopus
@@ -13,8 +12,7 @@ source:
   sha256: fcb2a733091f75b4b926cd60e807373422545cb814f8fd235a260d21c1ce864e
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
