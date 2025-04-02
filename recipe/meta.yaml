@@ -1,4 +1,4 @@
-{% set version = '0.6.6' %}
+{% set version = "0.8.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rscopus_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rscopus/rscopus_{{ version }}.tar.gz
-  sha256: fcb2a733091f75b4b926cd60e807373422545cb814f8fd235a260d21c1ce864e
+  sha256: dbd940a109c689f66f827b1987abfac3164b646bea65428d664070946d8b0fb3
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,8 +48,7 @@ about:
   home: https://dev.elsevier.com/sc_apis.html
   dev_url: https://github.com/muschellij2/rscopus
   license: GPL-2.0-only
-  summary: Uses Elsevier 'Scopus' API <https://dev.elsevier.com/sc_apis.html> to download information
-    about authors and their citations.
+  summary: Uses Elsevier 'Scopus' API <https://dev.elsevier.com/sc_apis.html> to download information about authors and their citations.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
