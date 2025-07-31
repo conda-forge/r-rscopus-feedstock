@@ -1,4 +1,4 @@
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rscopus_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rscopus/rscopus_{{ version }}.tar.gz
-  sha256: dbd940a109c689f66f827b1987abfac3164b646bea65428d664070946d8b0fb3
+  sha256: ec0286081f259fbb11b872db7612b61f10d5b15940f83c9aef223b0d4d61dad4
 
 build:
   number: 0
